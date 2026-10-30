@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisa Anggraeni - Portfolio & UI/UX Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1',
+                        accent: '#EC4899',
+                        darkBg: '#0B0F19',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B0F19] text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-wider bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+                My Portfolio
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-indigo-400 transition">Experience & Committees</a>
+                <a href="#assignments" class="hover:text-indigo-400 transition text-indigo-400 font-semibold">English Assignments</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-white">About</a>
+            <a href="#projects" class="block text-slate-300 hover:text-white">Projects</a>
+            <a href="#experience" class="block text-slate-300 hover:text-white">Experience & Committees</a>
+            <a href="#assignments" class="block text-indigo-400 font-semibold">English Assignments</a>
+            <a href="#contact" class="block text-slate-300 hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile Photo Space -->
+    <section id="home" class="pt-36 pb-24 md:pt-48 md:pb-32 relative overflow-hidden">
+        <!-- Glow background accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-pink-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left: Intro Text -->
+                <div class="text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-sm font-medium">
+                        <i class="fa-solid fa-location-dot text-pink-400"></i> Yogyakarta, Indonesia | Final Year Informatics Student
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                        Hello, I'm <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-500 bg-clip-text text-transparent">Anisa Anggraeni</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed">
+                        Combining technical proficiency in <strong class="text-white">Informatics</strong> with high creativity in <strong class="text-indigo-400">UI/UX Design & Graphic Design</strong>.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#projects" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-medium shadow-lg shadow-indigo-600/30 transition transform hover:-translate-y-0.5">
+                            Explore Projects
+                        </a>
+                        <a href="https://drive.google.com/file/d/1yJj-QHceeTIGj4U18VqRDeh8J9Rw5nnw/view?usp=sharing" target="_blank" class="px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-indigo-500/50 text-indigo-300 font-medium transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <i class="fa-solid fa-file-arrow-down"></i> View My CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Profile Photo Space -->
+                <div class="flex justify-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 to-pink-500 shadow-2xl">
+                        <div class="w-full h-full bg-slate-900 rounded-[22px] overflow-hidden flex items-center justify-center text-slate-500 relative group">
+                            <img src="profil.jpg.png" alt="Anisa Anggraeni" class="w-full h-full object-cover">                          
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-slate-300 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        I am a final-year student in the <strong class="text-white">Informatics Study Program, Faculty of Industrial Technology, Universitas Ahmad Dahlan</strong>. Currently, my primary focus is working on my undergraduate thesis while actively developing my skills according to my interests and talents.
+                    </p>
+                    <p>
+                        I have extensive experience as a graphic designer managing both social media content and print media. Throughout my semester coursework, I have also served as a <strong class="text-indigo-400">UI/UX designer</strong> in collaborative web development projects with my teams, backed by high creativity in graphic and visual design.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-2.5">
+                        <span class="px-3.5 py-1.5 bg-indigo-500/10 border border-indigo-500/30 rounded-lg text-sm text-indigo-300">HTML / CSS / PHP</span>
+                        <span class="px-3.5 py-1.5 bg-pink-500/10 border border-pink-500/30 rounded-lg text-sm text-pink-300">UI/UX & Graphic Design</span>
+                        <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300">Social Media Management</span>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-slate-800/80 to-slate-900 border border-slate-700/80 p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-3">
+                        <i class="fa-solid fa-code text-indigo-400"></i> Technical & Design Skills
+                    </h3>
+                    <ul class="space-y-4 text-slate-300 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <span><strong>Programming Languages:</strong> HTML, CSS, PHP, and web fundamentals.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <span><strong>UI/UX & Prototyping:</strong> User research, wireframing, Figma, and interactive mobile/web prototypes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <span><strong>Graphic & Visual Arts:</strong> Branding, promotional posters, print media, and social media content creation.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Screenshot Captures -->
+    <section id="projects" class="py-24 bg-[#0B0F19] border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">A collection of web applications, mobile prototypes, and systems built individually and in teams.</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mt-4"></div>
+            </div>
+
+           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Kartika Mandiri Logistik -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="kartika.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="kartika.png" alt="Kartika Mandiri Logistik" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Team Project</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">PT Kartika Mandiri Logistik Website</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Cargo shipping web platform featuring rolling monthly report expiry systems and WBS.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Web Design</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Project 2: Phishing Education -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="gamesiber.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="gamesiber.png" alt="Online Phishing Educational" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">Interactive Multimedia</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Online Phishing Educational Multimedia</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Interactive web application providing educational warnings and awareness regarding online scams.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Multimedia</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: School Distribution Map -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="peta.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="peta.png" alt="School Distribution Map" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">WebGIS / Map</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Yogyakarta School Distribution Map</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Interactive mapping web application showcasing school locations and distribution across Yogyakarta.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">WebGIS</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Spatial Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: RapatIn App -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="rapat.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="rapat.png" alt="RapatIn App" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">Mobile Prototype</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">RapatIn Meeting Scheduling App</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Mobile application UI/UX prototype designed for streamlined meeting scheduling and coordination.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Figma</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Mobile UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Anemia Detection -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="anemia.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="anemia.png" alt="Anemia Detection" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20">Mobile Prototype</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Anemia Detection Mobile App</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">UI/UX mobile application prototype built for early detection and health monitoring of anemia.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Health App</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Project 6: Yogyakarta Tourism Portal -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="wisata.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="wisata.png" alt="Yogyakarta Tourism Portal" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Web Development</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Yogyakarta Tourism Portal Website</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Web-based tourism directory portal showcasing various destinations and attractions in Yogyakarta.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">PHP / HTML</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Prims Coffee Shop -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="prims.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="prims.png" alt="Prims Coffee Shop" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Web Development</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Prims Coffee Shop Website</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">A cozy and modern coffee shop company profile and menu ordering website.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">HTML / CSS</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">UI Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Personal Finance App -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition duration-300 shadow-xl group">
+                    <a href="uang.png" target="_blank" class="h-48 bg-slate-950 border-b border-slate-700 flex items-center justify-center relative overflow-hidden block group">
+                        <img src="uang.png" alt="Personal Finance App" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20">Mobile App</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2 text-white">Personal Finance Management App</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Mobile application designed to track personal expenses, budgets, and financial records.</p>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">Android</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded-md">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Gallery Section (Clean Image Cards) -->
+    <section id="ig-gallery" class="py-24 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20 uppercase tracking-wider">Social Media Management & Design</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-3 mb-4">Instagram Feed Gallery</h2>               
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IG Feed Item 1 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden shadow-xl group hover:border-indigo-500/50 transition duration-300">
+                    <a href="ig1.png" target="_blank" class="aspect-square bg-slate-950 flex items-center justify-center relative overflow-hidden block">
+                        <img src="ig1.png" alt="Instagram Feed 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                </div>
+
+                <!-- IG Feed Item 2 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden shadow-xl group hover:border-indigo-500/50 transition duration-300">
+                    <a href="ig2.png" target="_blank" class="aspect-square bg-slate-950 flex items-center justify-center relative overflow-hidden block">
+                        <img src="ig2.png" alt="Instagram Feed 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                </div>
+
+                <!-- IG Feed Item 3 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl overflow-hidden shadow-xl group hover:border-indigo-500/50 transition duration-300">
+                    <a href="ig3.png" target="_blank" class="aspect-square bg-slate-950 flex items-center justify-center relative overflow-hidden block">
+                        <img src="ig3.png" alt="Instagram Feed 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-2">
+                            <i class="fa-solid fa-expand text-indigo-400"></i> Click to view full image
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience, Committees & Student Employment Section -->
+    <section id="experience" class="py-24 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Organization, Committees & Employment</h2>
+                <p class="text-slate-400">My leadership, committee contributions (Publikasi & Dokumentasi / PDD), and professional campus roles.</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Organizational & Employment Experience -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-8 rounded-3xl shadow-xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl font-bold">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Organization & Student Employment</h3>
+                            <p class="text-xs text-indigo-400">HMIF & Campus Roles</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-slate-300 text-sm">
+                        <li class="border-b border-slate-700/60 pb-3">
+                            <strong class="text-white block">Student Employment - Doctor of Education Study Program, FKIP UAD (2025)</strong>
+                            <span class="text-indigo-300 text-xs">Jobdesk: Managing social media and study program website.</span>
+                        </li>
+                        <li>
+                            <strong class="text-white block">Treasurer of Kominfo Department - HMIF (2024)</strong>
+                            <span class="text-slate-400 text-xs">Managed financial administration and departmental communication records.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Committee Experience (PDD Focus) -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-8 rounded-3xl shadow-xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-pink-500/20 flex items-center justify-center text-pink-400 text-xl font-bold">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Committee Roles (PDD / Pubdok)</h3>
+                            <p class="text-xs text-pink-400">Publication & Documentation Expertise</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span>Kongres Informatika 2023</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-500/10 text-pink-400">Coordinator PDD</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span>Tdays #12 FTI UAD (2023)</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-700 text-slate-300">Staff PDD</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span>Muarif HMIF (2024)</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-700 text-slate-300">Staff PDD</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span>Paradoks Season 3 HMIF (2024)</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-700 text-slate-300">Staff PDD</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span>Menarik Season 3 HMIF (2024)</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-500/10 text-pink-400">Coordinator PDD</span>
+                        </li>
+                        <li class="flex justify-between items-center pb-1">
+                            <span>Informatics Anniversary Celebration (2024)</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-700 text-slate-300">Staff PDD</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- English Professional Assignments Section -->
+    <section id="assignments" class="py-24 bg-[#0B0F19] border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">English Professional Assignments</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Collection of professional English course assignments linked directly to Google Drive documents.</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Assignment 1 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between hover:border-indigo-500 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-600/30 text-indigo-300 border border-indigo-500/30">Task 1</span>
+                            <i class="fa-solid fa-file-lines text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Self Introduction</h3>
+                        <p class="text-slate-300 text-sm mb-6">Professional self-introduction and academic background documentation.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/11E5DkYVlDBoKU0npNDVdujH3PTOnMl5P?usp=sharing" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium text-center transition flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-brands fa-google-drive"></i> Open Link
+                    </a>
+                </div>
+
+                <!-- Assignment 2 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between hover:border-indigo-500 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-600/30 text-indigo-300 border border-indigo-500/30">Task 2</span>
+                            <i class="fa-solid fa-file-lines text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Professional Writing</h3>
+                        <p class="text-slate-300 text-sm mb-6">Business correspondence, technical essays, and professional writing samples.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/11E5DkYVlDBoKU0npNDVdujH3PTOnMl5P?usp=sharing" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium text-center transition flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-brands fa-google-drive"></i> Open Link
+                    </a>
+                </div>
+
+                <!-- Assignment 3 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between hover:border-indigo-500 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-600/30 text-indigo-300 border border-indigo-500/30">Task 3</span>
+                            <i class="fa-solid fa-file-lines text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Thesis Background & English Journal</h3>
+                        <p class="text-slate-300 text-sm mb-6">Undergraduate thesis background summary and related English journal review.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/11E5DkYVlDBoKU0npNDVdujH3PTOnMl5P?usp=sharing" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium text-center transition flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-brands fa-google-drive"></i> Open Link
+                    </a>
+                </div>
+
+                <!-- Assignment 4 -->
+                <div class="bg-slate-800/60 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between hover:border-indigo-500 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-pink-600/30 text-pink-300 border border-pink-500/30">Task 4</span>
+                            <i class="fa-solid fa-file-lines text-pink-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Professional CV</h3>
+                        <p class="text-slate-300 text-sm mb-6">Curriculum vitae tailored for professional tech and design career pathways.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/11E5DkYVlDBoKU0npNDVdujH3PTOnMl5P?usp=sharing" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium text-center transition flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-brands fa-google-drive"></i> Open Link
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/50 border-t border-slate-800/80 text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-8">Feel free to reach out via email, GitHub, or Instagram!</p>
+            <div class="flex justify-center gap-5 mb-8">
+                <a href="mailto:37anisaanggraeni@gmail.com" class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 hover:bg-indigo-600 hover:text-white transition duration-300 shadow-lg" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/chcmlt" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 hover:bg-indigo-600 hover:text-white transition duration-300 shadow-lg" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/apasehkepo.id" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 hover:bg-indigo-600 hover:text-white transition duration-300 shadow-lg" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6281229059140" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 hover:bg-indigo-600 hover:text-white transition duration-300 shadow-lg" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-[#0B0F19] text-center text-slate-500 text-sm border-t border-slate-900">
+        <p>&copy; 2026 Anisa Anggraeni.</p>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
